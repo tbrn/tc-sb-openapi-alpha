@@ -1,7 +1,7 @@
 package local.tc.demo.openapi.alpha.hellofeign;
 
 import local.tc.demo.openapi.alpha.hello.api.HelloApi;
-import local.tc.demo.openapi.alpha.hello.api.HelloResponse;
+import local.tc.demo.openapi.alpha.hello.api.model.HelloResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
