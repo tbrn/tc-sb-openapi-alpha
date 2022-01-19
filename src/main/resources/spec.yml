@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Sample API
+  description: A sample API to illustrate OpenAPI concepts
+
+tags:
+  - name: "helloOpen" # Will generate a HelloOpenApi.java interface, by default all paths are generated against DefaultApi.java
+    description: "Hello World API"
+
+paths:
+  /helloopenapi:
+    get:
+      tags: # this drives which api this is going to be part of, in this case HelloApi
+        - helloOpen
+      operationId: "hello"
+      description: Returns a hello message
+      responses:
+        '200':
+          description: Successful response
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/HelloOpenApiResponse'
+components:
+  schemas:
+    HelloOpenApiResponse:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message

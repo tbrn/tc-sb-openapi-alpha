@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Alpha
+
+server:
+  port: 8080
+
+client:
+  hello:
+    target: localhost:9090
+  helloopen:
+    target: localhost:9090

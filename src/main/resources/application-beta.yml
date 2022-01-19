@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Beta
+
+server:
+  port: 9090
+
+client:
+  hello:
+    target: localhost:8080
+  helloopen:
+    target: localhost:8080
